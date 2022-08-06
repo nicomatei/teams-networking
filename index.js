@@ -9,6 +9,10 @@ function displayTeams(teams) {
       <td>${team.members}</td>
       <td>${team.name}</td>
       <td><a href="${team.url}">open</a></td>
+      <td>
+                <button type="submit">💾</button>
+                <button type="reset">❌</button>
+              </td>
     </tr> `;
   });
   console.info(teamsHTML);
