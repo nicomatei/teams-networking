@@ -4,12 +4,12 @@ function displayTeams(teams) {
   var teamsHTML = "";
   teams.forEach(function (team) {
     teamsHTML += `
-  <tr>
-  <td>${team.promotion}</td>
-  <td>${team.members}</td>
-  <td>${team.name}</td>
-  <td><a href="${team.url}">open</a></td>
-  </tr> `;
+    <tr>
+      <td>${team.promotion}</td>
+      <td>${team.members}</td>
+      <td>${team.name}</td>
+      <td><a href="${team.url}">open</a></td>
+    </tr> `;
   });
   console.info(teamsHTML);
   document.querySelector("table tbody").innerHTML = teamsHTML;
